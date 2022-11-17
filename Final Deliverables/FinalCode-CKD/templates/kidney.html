@@ -11,6 +11,7 @@
         type = "image/x-icon">
 </head>
 <style>
+
 	button
 {
 	border-style:none;
@@ -23,17 +24,24 @@ h1, h2, h3, h4, h5{
 
 form {
 	margin-top: 3%;
-	margin-left: 29%;
+	margin-left: 25%;
 	margin-right: 21%;
+    padding: 30px;
+	border-width: 20px;
 
 }
 
 form fieldset{
-	padding: 30px;
-	border-width: 20px;
-	border-style: groove;
-    border-color: #5a5a5a;
-	background-color: #fff;
+    padding: 30px;
+	border-width: 40px;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: #077ca3;    
+  
 }
 
 fieldset h1 {
@@ -63,7 +71,7 @@ fieldset input:focus{
 }
 fieldset button
 {
-	margin-left: 60px;
+	margin-left: 80px;
 	color: #fff;
 	background-color: #5a5a5a;
 	border-radius: 3px;
@@ -71,7 +79,7 @@ fieldset button
 	text-align: center;
 	letter-spacing: 0.9px;
 	text-decoration: none;
-	margin-right: 15px;
+	/* margin-right: 15px; */
 	line-height: 26px;
 	font-size: 16px;
 	box-shadow: 0px 1px 3px 0px #5a5a5a;
@@ -97,6 +105,7 @@ fieldset button
 	margin-top: 15px;
 }
 
+
 #link_to_edit{
     padding-left: 45px;
 }
@@ -113,8 +122,6 @@ fieldset button
 	background-color: #ebfffa;
 }
 </style>
-<body>
-
 	<header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <a class="navbar-brand" href="dashboard"><b>NEPHRONOS</b></a>
@@ -141,47 +148,50 @@ fieldset button
                 </div>
             </nav>
     </header><br/><br/>
-    <h1 style="text-align:center;">Kidney Disease Prediction</h1>
-    <h5 style="text-align:center;">Please enter the patient details</h5>
+    <h1 style="text-align:center;
+    font-family: 'Poppins', sans-serif;">Kidney Disease Prediction</h1>
+    <h5 style="text-align:center;
+    font-family: 'Poppins', sans-serif;">Please enter the patient details</h5>
 
+    
     <form action="{{ url_for('predictkidney')}}" method="post" class="form-inline">
         <fieldset>
             <div class="tabcontent" id="new">
                 <div class="form-group">
                     <label for="bp">Blood Pressure</label>
-                    <input class="form-control" type="number" id="bp" name="Year" required="required" placeholder="Blood Pressure">
+                    <input class="form-control" type="number" id="bp" name="Year" required="required" placeholder="95 – 135 mm Hg">
                 </div>
 
                 <div class="form-group">
                     <label for="sg">Specific Gravity</label>
-                    <input class="form-control" type="number" step="any" id="sg" name="sg" required="required" placeholder="Specific Gravity">
+                    <input class="form-control" type="number" step="any" id="sg" name="sg" required="required" placeholder="1.005 to 1.030 Nsg">
                 </div>
 
                 <div class="form-group">
                     <label for="al">Albumin</label>
-                    <input class="form-control" type="number" id="al" name="al" required="required" placeholder="Albumin">
+                    <input class="form-control" type="number" id="al" name="al" required="required" placeholder="3.4 to 5.4 g/dL">
                 </div>
 
                 <div class="form-group">
                     <label for="su">Blood Sugar Level</label>
-                    <input class="form-control" type="number" id="su" name="su" required="required" placeholder="Blood Sugar Level">
+                    <input class="form-control" type="number" id="su" name="su" required="required" placeholder="100 to 125 mg/dL">
                 </div>
 
                 <div class="form-group">
                     <label for="rbc">Red Blood Cells Count</label>
-                    <input class="form-control" type="number" id="rbc" name="rbc" required="required" placeholder="Red Blood Cells Count">
+                    <input class="form-control" type="number" id="rbc" name="rbc" required="required" placeholder="4.7 to 6.1 cells/mcL">
                 </div>
 
                 <div class="form-group">
                     <label for="pc">Pus Cell Count</label>
-                    <input class="form-control" type="number" id="pc" name="pc" required="required" placeholder="Pus Cell Count">
+                    <input class="form-control" type="number" id="pc" name="pc" required="required" placeholder="0-5/hpf">
                 </div>
 
                 <div class="form-group">
                     <label for="pcc">Pus Cell Clumps</label>
-                    <input class="form-control" type="number" id="pcc" name="pcc" required="required" placeholder="Pus Cell Clumps">
+                    <input class="form-control" type="number" id="pcc" name="pcc" required="required" placeholder="4 cells / HPF">
                 </div>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary btn-lg">Predict</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary btn-lg"  ;>Predict</button>
             </div>
         </fieldset>
     </form>
