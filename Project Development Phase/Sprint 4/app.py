@@ -23,6 +23,14 @@ db = SQLAlchemy(app)
 
 import requests
 
+# {
+#  "url": "https"://us-south.ml.cloud.ibm.com",
+#  "apikey": "bjDHPSDtltdspG9iahXnL1LDkulHHxREJyP0HvHXmA-y"
+#  }
+
+
+# API_KEY = "bjDHPSDtltdspG9iahXnL1LDkulHHxREJyP0HvHXmA-y"
+
 # NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
 API_KEY = "bjDHPSDtltdspG9iahXnL1LDkulHHxREJyP0HvHXmA-y"
 token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey":
