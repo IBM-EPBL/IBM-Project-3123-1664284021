@@ -5,11 +5,13 @@ body {
 
 }
 .background-image{
-  background-image: url(./img/kidney1.jpg);
-  -webkit-backdrop-filter: blur(5px);
-  filter: blur(5px);
+  background-image: url(./img/art_kidney.jpg);
+  /* -webkit-backdrop-filter: blur(5px);
+  filter: blur(5px); */
   width: 1366px;
   height: 588px;
+  margin-top: 45px;
+  margin-left: 90px;
   background-repeat: no-repeat;
   
 }
@@ -33,7 +35,7 @@ body {
  
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 65%;
   transform: translate(-50%,-50%);
   
 
