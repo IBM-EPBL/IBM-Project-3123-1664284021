@@ -17,6 +17,11 @@ Technical Architecture:
 
 This webapp was developed using Flask Web Framework. The models used to predict the diseases were trained on large Datasets. The webapp can predict following Disease: Chronic-Kidney-Disease-Prediction
 
+![](https://github.com/IBM-EPBL/IBM-Project-3123-1664284021/blob/main/Final%20Deliverables/Images/CKD%20gif.gif?raw=true)
+
+### Chronic Kidney Disease
+Early chronic kidney disease has no signs or symptoms – many people living with CKD don’t even know it until the disease is in an advanced stage. About 10% of the adult population is living with some degree of CKD, and every year millions die prematurely from CKD and related complications.CKD is a major risk factor for cardiovascular diseases, which are the primary cause of death for all people living with CKD. If CKD is detected early and managed appropriately, the deterioration in kidney function can be slowed or even stopped, and the risk of associated cardiovascular complications can be reduced. CKD is largely preventable, and can be detected early with simple blood and urine tests.
+
 - Home page
 ![image](https://github.com/IBM-EPBL/IBM-Project-3123-1664284021/blob/main/Final%20Deliverables/Images/Home.png?raw=true)
 - About us page
